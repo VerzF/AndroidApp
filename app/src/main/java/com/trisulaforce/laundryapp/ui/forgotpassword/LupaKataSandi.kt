@@ -120,6 +120,7 @@ fun LupaKataSandi(modifier: Modifier = Modifier) {
                             Icon(
                                 painter = painterResource(id = R.drawable.ic_email),
                                 contentDescription = "Email") },
+                        shape = RoundedCornerShape(12.dp),
                         modifier = Modifier
                             .fillMaxWidth()
                     )

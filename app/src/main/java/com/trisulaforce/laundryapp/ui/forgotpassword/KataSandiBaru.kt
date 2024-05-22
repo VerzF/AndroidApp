@@ -63,8 +63,7 @@ class KataSandiBaru : AppCompatActivity() {
 fun KataSandiBaru(modifier: Modifier = Modifier) {
     Box(
         modifier = modifier
-            .requiredWidth(width = 360.dp)
-            .requiredHeight(height = 800.dp)
+            .fillMaxSize()
             .clip(shape = RoundedCornerShape(24.dp))
             .background(Color.White)
     ) {
@@ -152,6 +151,7 @@ fun KataSandiBaru(modifier: Modifier = Modifier) {
                                     Image(painter = visibilityIcon, contentDescription = description)
                                 }
                             },
+                            shape = RoundedCornerShape(12.dp),
                             modifier = Modifier.fillMaxWidth()
                         )
                         OutlinedTextField(
@@ -174,6 +174,7 @@ fun KataSandiBaru(modifier: Modifier = Modifier) {
                                     Image(painter = visibilityIcon, contentDescription = description)
                                 }
                             },
+                            shape = RoundedCornerShape(12.dp),
                             modifier = Modifier.fillMaxWidth()
                         )
                     }
