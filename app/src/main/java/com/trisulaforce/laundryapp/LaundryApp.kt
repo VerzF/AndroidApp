@@ -4,6 +4,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.AccountCircle
 import androidx.compose.material.icons.filled.Home
+import androidx.compose.material.icons.filled.Notifications
 import androidx.compose.material3.Icon
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
@@ -74,6 +75,11 @@ private fun BottomBar(
                 title = stringResource(R.string.menu_home),
                 icon = Icons.Default.Home,
                 screen = Screen.Home
+            ),
+            NavigationItem(
+                title = stringResource(R.string.menu_notifikasi),
+                icon = Icons.Default.Notifications,
+                screen = Screen.Notification
             ),
             NavigationItem(
                 title = stringResource(R.string.menu_profile),
